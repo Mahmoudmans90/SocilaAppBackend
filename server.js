@@ -1,4 +1,5 @@
 import app from "./src/app.js";
+import { dbConnection } from "./src/config/db.js";
 async function startServer() {
   try {
     await dbConnection();
@@ -10,3 +11,4 @@ async function startServer() {
     console.error("Failed to start server:", error.message);
   }
 }
+startServer();

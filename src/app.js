@@ -7,7 +7,6 @@ import userRouter from "./routes/user.route.js";
 import cookieParser from "cookie-parser";
 import PostsRouter from "./routes/posts.route.js";
 const app = express();
-dbConnection();
 app.use(express.json());
 app.use(cookieParser());
 app.use(
